@@ -1,0 +1,55 @@
+$font-size: 10;
+@function rem($pixels) {
+  @return $pixels / $font_size + rem;
+}
+
+.t {
+  &-thin {
+    font-weight: 100;
+  }
+
+  &-normal {
+    font-weight: normal;
+  }
+
+  &-bold {
+    font-weight: bold;
+  }
+
+  &-center {
+    text-align: center;
+  }
+
+  &-right {
+    text-align: right;
+  }
+
+  &-left {
+    text-align: left;
+  }
+}
+
+
+@for $i from 9 through 30 {
+  .fs-#{$i} {
+    font-size: rem($i);
+  }
+}
+
+@for $i from 10 through 25 {
+  .fsr-#{$i} {
+    font-size: #{$i/10}rem;
+  }
+}
+
+@for $i from 0 through 20 {
+  .lh-#{$i} {
+    line-height: #{$i/10};
+  }
+}
+
+@for $i from 10 through 30 {
+  .lhp-#{$i} {
+    line-height: #{$i}px;
+  }
+}

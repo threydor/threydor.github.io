@@ -1,0 +1,34 @@
+@import "~normalize.css";
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'Lato';
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+}
+
+@import "styles/flex-styles";
+@import "styles/text-styles";
+@import "styles/size-styles";
+@import "styles/various-styles";
+@import "styles/cv-sections";
+/* You can add global styles to this file, and also import other style files */
+
+
+.only-print {
+  //display: none;
+  @media print {
+    display: block;
+  }
+}
