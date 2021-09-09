@@ -9,15 +9,30 @@
 
   &__content {
     margin-top: 15px;
+    margin-left: 40px;
+    @media screen and (max-width: 768px) {
+      margin-left: 0;
+    }
+
     td:first-of-type {
-      padding-right: 50px;
+      padding-right: 15px;
+      text-align: right;
+      width: 150px;
       @media screen and (max-width: 768px) {
-        padding-right: 10px;
+        width: auto;
       }
     }
 
     ul {
       padding-left: 15px;
+    }
+
+    table {
+      border-collapse: collapse;
+    }
+
+    tr {
+      border-bottom: 10px solid transparent;
     }
   }
 }
