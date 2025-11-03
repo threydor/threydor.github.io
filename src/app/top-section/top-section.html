@@ -1,0 +1,76 @@
+<div class="max-w-4xl mx-auto print:text-xs">
+  <header class="text-center mb-8 print:mb-0">
+    <h1 class="text-4xl md:text-6xl print:text-3xl mb-2 tracking-tight">
+      Curriculum Vitae
+    </h1>
+    <div class="w-48 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mt-4 rounded-full"></div>
+  </header>
+
+  @if (cvStore.personalInfo(); as personalInfo) {
+    <mat-card appearance="outlined"
+              class="mx-auto print:!border-0">
+      <div class="flex flex-col md:flex-row p-6 gap-6 print:p-2 max-sm:px-1 max-sm:py-2 print:gap-2">
+        <mat-card-header
+          class="flex flex-col print:flex-row print:self-center items-center flex-shrink-0 !p-0 text-center flex-1">
+          <div mat-card-avatar class="!w-[8rem] !h-[8rem] !mb-0 mx-auto">
+            <img
+              ngSrc="profile-photo.jpg"
+              width="120"
+              height="120"
+              [alt]="personalInfo.name"
+              class="rounded-full w-100 border-4 border-blue-200 shadow-lg object-cover"
+            />
+          </div>
+          <mat-card-title>
+            {{ personalInfo.name }}
+          </mat-card-title>
+          <mat-card-subtitle>
+            {{ personalInfo.title }}
+          </mat-card-subtitle>
+        </mat-card-header>
+
+        <mat-card-content class="flex-2 !p-0 my-auto">
+          <div class="grid grid-cols-2 print:grid-cols-3 gap-4 print:gap-1">
+            <app-top-section-card-content iconName="cake" [label]="cvStore.sectionLabels().dateOfBirth"
+                                          [reverseOnMobile]="true" [copyValue]="personalInfo.dateOfBirth">
+              <p class="text-sm  text-gray-800">{{ personalInfo.dateOfBirth }}</p>
+            </app-top-section-card-content>
+
+            <app-top-section-card-content iconName="location_on" [label]="cvStore.sectionLabels().location"
+                                          [copyValue]="personalInfo.location">
+              <p class="text-sm text-gray-800">{{ personalInfo.location }}</p>
+            </app-top-section-card-content>
+
+            <app-top-section-card-content iconName="email" [label]="cvStore.sectionLabels().email"
+                                          [reverseOnMobile]="true" [copyValue]="personalInfo.email">
+              <a
+                [href]="'mailto:' + personalInfo.email"
+                class="text-sm text-blue-600 hover:text-blue-800 hover:underline transition-colors break-all">
+                {{ personalInfo.email }}
+              </a>
+            </app-top-section-card-content>
+
+            <app-top-section-card-content iconName="phone" [label]="cvStore.sectionLabels().phone"
+                                          [copyValue]="personalInfo.phone">
+              <a
+                [href]="'tel:' + personalInfo.phone"
+                class="text-sm  text-blue-600 hover:text-blue-800 hover:underline transition-colors">
+                {{ personalInfo.phone }}
+              </a>
+            </app-top-section-card-content>
+
+            @if (personalInfo.githubPage) {
+              <app-top-section-card-content
+                [reverseOnMobile]="true"
+                class="hidden print:block" iconName="link" [label]="cvStore.sectionLabels().website"
+                [copyValue]="'https://' + personalInfo.githubPage">
+                <p class="text-sm text-gray-800">https://{{ personalInfo.githubPage }}</p>
+              </app-top-section-card-content>
+            }
+          </div>
+          <app-top-section-social class="print:!hidden"/>
+        </mat-card-content>
+      </div>
+    </mat-card>
+  }
+</div>

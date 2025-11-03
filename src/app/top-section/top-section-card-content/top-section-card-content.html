@@ -1,0 +1,18 @@
+<div
+  class="flex items-center gap-3 p-2 print:p-1 rounded-lg hover:bg-gray-100 transition-colors relative group" [ngClass]="contentCssClass()">
+  <mat-icon class="text-purple-600 print:!hidden">{{ iconName() }}</mat-icon>
+  <div class="flex-1">
+    <p
+      class="text-xs text-gray-500 uppercase tracking-wide">{{ label() }}</p>
+    <ng-content/>
+  </div>
+  @if (copyValue()) {
+    <button
+      mat-icon-button
+      (click)="copyToClipboard()"
+      class="copy-button absolute top-0 right-0 opacity-0 group-hover:opacity-100 transition-opacity print:!hidden max-sm:!hidden"
+      [attr.aria-label]="'Copy ' + label()">
+      <mat-icon class="text-gray-600">content_copy</mat-icon>
+    </button>
+  }
+</div>

@@ -1,0 +1,7 @@
+<app-section-template [sectionTitle]="cvStore.sectionTitles().experience">
+  <div class="flex flex-col gap-4">
+    @for (exp of cvStore.experiences(); track exp.company) {
+      <app-experience-card [exp]="exp" />
+    }
+  </div>
+</app-section-template>

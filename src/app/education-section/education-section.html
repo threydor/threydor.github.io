@@ -1,0 +1,7 @@
+<app-section-template [sectionTitle]="cvStore.sectionTitles().education">
+  <div class="flex flex-col gap-4">
+    @for (edu of cvStore.educations(); track edu.institution) {
+      <app-education-card [edu]="edu" />
+    }
+  </div>
+</app-section-template>

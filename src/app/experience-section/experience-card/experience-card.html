@@ -1,0 +1,28 @@
+<mat-card appearance="outlined" class="print:!border-0">
+  <mat-card-header class="print:!p-1 max-sm:!p-2">
+    <mat-card-title class="text-xl">{{ exp().position }}</mat-card-title>
+  </mat-card-header>
+  <mat-card-content class="print:!p-1 max-sm:!p-2">
+    <div class="app-experience-card-info grid grid-cols-3 md:!flex max-sm:mb-3 gap-2 my-2">
+      <ng-container
+        *ngTemplateOutlet="textWithIcon; context: { iconName: 'business', text: exp().company, iconClass: '!text-blue-800'}"/>
+      <ng-container
+        *ngTemplateOutlet="textWithIcon; context: { iconName: 'calendar_today', text: exp().period, iconClass: '!text-green-700'}"/>
+      <ng-container
+        *ngTemplateOutlet="textWithIcon; context: { iconName: 'location_on', text: exp().location, iconClass:'!text-red-600'}"/>
+    </div>
+    <p>{{ cvStore.sectionLabels().responsibilities }}:</p>
+    <ul class="list-disc list-inside">
+      @for (responsibility of exp().responsibilities; track responsibility) {
+        <li class="leading-6 hover:bg-gray-200 rounded px-2">{{ responsibility }}</li>
+      }
+    </ul>
+  </mat-card-content>
+</mat-card>
+
+<ng-template #textWithIcon let-iconClass="iconClass" let-iconName="iconName" let-text=text>
+  <div class=" flex items-center max-sm:flex-col max-sm:items-center gap-2">
+    <mat-icon class="text-base" [ngClass]="iconClass">{{ iconName }}</mat-icon>
+    <span>{{ text }}</span>
+  </div>
+</ng-template>

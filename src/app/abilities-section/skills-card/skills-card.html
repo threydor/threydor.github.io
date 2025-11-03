@@ -1,0 +1,16 @@
+<mat-card appearance="outlined" class="print:!border-0">
+  <mat-card-content class="print:!p-1 max-sm:!p-2">
+    <div class="flex flex-col gap-2">
+      @let sectionLabels = cvStore.sectionLabels();
+      @if (cvStore.skills().frontEnd; as frontEndSkills) {
+        <app-skills-by-type [typeLabel]="sectionLabels.frontEnd" [skills]="frontEndSkills"/>
+      }
+      @if (cvStore.skills().backEnd; as backEndSkills) {
+        <app-skills-by-type [typeLabel]="sectionLabels.backEnd" [skills]="backEndSkills"/>
+      }
+      @if (cvStore.skills().other; as otherSkills) {
+        <app-skills-by-type [typeLabel]="sectionLabels.other" [skills]="otherSkills"/>
+      }
+    </div>
+  </mat-card-content>
+</mat-card>

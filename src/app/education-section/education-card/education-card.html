@@ -1,0 +1,14 @@
+<mat-card appearance="outlined" class="print:!border-0">
+  <mat-card-header class="print:!p-1 max-sm:!p-2">
+    <mat-card-title>{{ edu().degree }}</mat-card-title>
+  </mat-card-header>
+  <mat-card-content class="print:!p-1 max-sm:!p-2">
+    <div class="flex items-center gap-2 max-sm:flex-col">
+      <mat-icon class="text-base !text-cyan-800">school</mat-icon>
+      <span>{{ edu().institution }}</span>
+      <span class="mx-2">•</span>
+      <mat-icon class="text-base !text-green-700">calendar_today</mat-icon>
+      <span>{{ edu().period }}</span>
+    </div>
+  </mat-card-content>
+</mat-card>

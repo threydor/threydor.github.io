@@ -1,0 +1,129 @@
+{
+  "personalInfo": {
+    "name": "Tomasz Osipiak",
+    "title": "Web Developer",
+    "dateOfBirth": "18th September 1989",
+    "location": "Gdańsk, Poland",
+    "email": "osi.tomasz@gmail.com",
+    "phone": "+48 693 650 356",
+    "githubPage": "threydor.github.io",
+    "whatsapp": "https://wa.me/48693650356?text=Hello%20Tomasz%2C%20I%20found%20your%20contact%20on%20your%20portfolio%20website.%20I%20would%20like%20to%20get%20in%20touch%20with%20you.",
+    "facebook": "https://www.facebook.com/tomasz.osi",
+    "instagram": "https://www.instagram.com/tomthrey/",
+    "linkedIn": "https://www.linkedin.com/in/t-osipiak/"
+  },
+  "skills": {
+    "frontEnd": [
+      "Angular 12+",
+      "AngularJS",
+      "Typescript",
+      "JavaScript",
+      "NgRx",
+      "RxJS",
+      "HTML",
+      "CSS",
+      "SCSS",
+      "Storybook",
+      "Tailwind CSS",
+      "Angular Material",
+      "PrimeNG",
+      "RWD"
+    ],
+    "backEnd": [
+      "Java 11/17/21",
+      "Spring Boot",
+      "Hibernate",
+      "MySQL",
+      "JPA",
+      "Kafka",
+      "MapStruct"
+    ],
+    "other": [
+      "Docker",
+      "Kubernetes",
+      "Git",
+      "AWS (Secrets Manager, S3, EKS, IAM, SQS, SNS)",
+      "GitLab CI/CD",
+      "OpenAPI (Swagger)",
+      "Keycloak"
+    ]
+  },
+  "experiences": [
+    {
+      "company": "VIDAA Poland R&D",
+      "position": "Full-stack Developer",
+      "period": "2024 - 2025",
+      "location": "Gdańsk/Warsaw, Poland",
+      "responsibilities": [
+        "Further development and maintenance of web applications handling data integration between partners and the VIDAA TV Channels platform (Angular 17+, currently 20; Java 21/Spring Boot)",
+        "Creating and maintaining back-end/front-end parts of Ad Insertion CMS application on VIDAA TV platform (Angular 17+, currently 20; Java 21/Spring Boot)",
+        "Maintenance and minor changes in orchestration application microservices (mainly maintenance, Java 11/17/21/Spring Boot)",
+        "Working with AWS, Kubernetes, Docker, Kafka, Hibernate, JPA, Helm files and GitLab CI/CD pipelines (both back-end and front-end)",
+        "Implementation and development of API using OpenAPI (Swagger)",
+        "Cooperation with UX/UI designers to improve application usability and appearance",
+        "Code reviews and mentoring junior developers",
+        "Participation in sprint planning and estimation sessions",
+        "Collaboration with cross-functional teams to ensure seamless integration between front-end and back-end services",
+        "Direct collaboration with clients to gather requirements and provide solutions",
+        "Optimization of application performance and scalability"
+      ]
+    },
+    {
+      "company": "VIDAA Poland R&D",
+      "position": "Front-end Developer",
+      "period": "2022 - 2024",
+      "location": "Gdańsk/Warsaw, Poland",
+      "responsibilities": [
+        "Development and maintenance of internal web applications supporting orchestration and content management of VIDAA TV Channels application (technologies: AngularJS + Angular 12+)",
+        "Migration and modernization of front-end components based on new Angular versions",
+        "Creating and maintaining web application handling Ad Insertion CMS on VIDAA TV platform (Angular 17+, currently 20)",
+        "Development of application integrating data between partners and VIDAA TV Channels platform (Angular 17+, currently 20)",
+        "Working with Kubernetes, Docker and GitLab CI/CD pipelines",
+        "Implementation of UI using SCSS, Tailwind CSS, Angular Material and PrimeNG"
+      ]
+    },
+    {
+      "company": "9 Bits Sp. z o.o.",
+      "position": "Front-end Developer",
+      "period": "2017 - 2022",
+      "location": "Białystok, Poland",
+      "responsibilities": [
+        "Cooperation with clients regarding creation and improvement of websites",
+        "Creating and developing existing web applications",
+        "Creating documentation",
+        "Code maintenance, refactoring existing code",
+        "Team management, task assignment, Code Review",
+        "Sprint planning",
+        "Effort estimation",
+        "Application deployments (CI/CD)",
+        "Close cooperation with back-end team",
+        "Establishing requirements during creation of new application features"
+      ]
+    }
+  ],
+  "educations": [
+    {
+      "institution": "Bialystok University of Technology",
+      "degree": "Computer Science, Bachelor's degree",
+      "period": "2014 - 2018"
+    }
+  ],
+  "sectionTitles": {
+    "skills": "Skills & Technologies",
+    "experience": "Experience",
+    "education": "Education"
+  },
+  "sectionLabels": {
+    "dateOfBirth": "Date of Birth",
+    "location": "Location",
+    "email": "Email",
+    "phone": "Phone",
+    "responsibilities": "List of responsibilities",
+    "frontEnd": "Front-end",
+    "backEnd": "Back-end",
+    "other": "Other",
+    "copied": "Copied to clipboard",
+    "website": "Website"
+  },
+  "footerNote": "I agree to the processing of personal data provided in this document for realising the recruitment process pursuant to the Personal Data Protection Act of 10 May 2018 (Journal of Laws 2018, item 1000) and in agreement with Regulation (EU) 2016"
+}
