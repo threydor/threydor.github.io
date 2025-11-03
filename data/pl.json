@@ -1,0 +1,130 @@
+{
+  "personalInfo": {
+    "name": "Tomasz Osipiak",
+    "title": "Web Developer",
+    "dateOfBirth": "18 września 1989",
+    "location": "Gdańsk, Polska",
+    "email": "osi.tomasz@gmail.com",
+    "phone": "+48 693 650 356",
+    "githubPage": "threydor.github.io",
+    "whatsapp": "https://wa.me/48693650356?text=Cześć%20Tomasz%2C%20znalazłem%20Twój%20kontakt%20na%20Twojej%20stronie%20portfolio.%20Chciałbym%20się%20z%20Tobą%20skontaktować.",
+    "facebook": "https://www.facebook.com/tomasz.osi",
+    "instagram": "https://www.instagram.com/tomthrey/",
+    "linkedIn": "https://www.linkedin.com/in/t-osipiak/"
+  },
+  "skills": {
+    "frontEnd": [
+      "Angular 12+",
+      "AngularJS",
+      "Typescript",
+      "JavaScript",
+      "RxJS",
+      "NgRx",
+      "HTML",
+      "CSS",
+      "SCSS",
+      "Storybook",
+      "Tailwind CSS",
+      "Angular Material",
+      "PrimeNG",
+      "DevExtreme",
+      "RWD"
+    ],
+    "backEnd": [
+      "Java 11/17/21",
+      "Spring Boot",
+      "Hibernate",
+      "MySQL",
+      "JPA",
+      "Kafka",
+      "MapStruct"
+    ],
+    "other": [
+      "Docker",
+      "Kubernetes",
+      "Git",
+      "AWS (Secrets Manager, S3, EKS, IAM, SQS, SNS)",
+      "GitLab CI/CD",
+      "OpenAPI (Swagger)",
+      "Keycloak"
+    ]
+  },
+  "experiences": [
+    {
+      "company": "VIDAA Poland R&D",
+      "position": "Full-stack Developer",
+      "period": "04.2024 - 12.2025",
+      "location": "Gdańsk/Warszawa, Polska",
+      "responsibilities": [
+        "Dalszy rozwój oraz utrzymanie aplikacji webowych obsługujących integrację danych między partnerami a platformą VIDAA TV Channels (Angular 17+, obecnie 20; Java 21/Spring Boot)",
+        "Tworzenie i utrzymanie back-endowej/front-endowej części aplikacji do Ad Insertion CMS na platformie VIDAA TV (Angular 17+, obecnie 20; Java 21/Spring Boot)",
+        "Utrzymanie i drobne zmiany w mikroserwisach aplikacji orkiestracyjnej (głównie maintenance, Java 11/17/21/Spring Boot)",
+        "Praca z AWS, Kubernetes, Docker, Kafka, Hibernate, JPA, plikami Helm i pipeline’ami GitLab CI/CD (po stronie back-endu i front-endu)",
+        "Implementacja oraz rozwój API z wykorzystaniem OpenAPI (Swagger)",
+        "Współpraca z projektantami UX/UI w celu poprawy użyteczności i wyglądu aplikacji",
+        "Przeglądy kodu i mentoring młodszych programistów",
+        "Udział w planowaniu sprintów i sesjach estymacyjnych",
+        "Współpraca z zespołami międzyfunkcyjnymi w celu zapewnienia płynnej integracji między usługami front-endowymi i back-endowymi",
+        "Bezpośrednia współpraca z klientami w celu zbierania wymagań i dostarczania rozwiązań",
+        "Optymalizacja wydajności i skalowalności aplikacji"
+      ]
+    },
+    {
+      "company": "VIDAA Poland R&D",
+      "position": "Front-end Developer",
+      "period": "04.2022 - 04.2024",
+      "location": "Gdańsk/Warszawa, Polska",
+      "responsibilities": [
+        "Rozwój i utrzymanie wewnętrznych aplikacji webowych wspierających orkiestrację i zarządzanie contentem aplikacji VIDAA TV Channels (technologie: AngularJS + Angular 12+)",
+        "Migracja oraz modernizacja komponentów front-endowych w oparciu o nowe wersje Angular",
+        "Tworzenie i utrzymanie aplikacji webowej obsługującej Ad Insertion CMS na platformie VIDAA TV (Angular 17+, obecnie 20)",
+        "Rozwój aplikacji integrującej dane między partnerami a platformą VIDAA TV Channels (Angular 17+, obecnie 20)",
+        "Praca z Kubernetes, Docker oraz pipeline’ami GitLab CI/CD",
+        "Implementacja UI z wykorzystaniem SCSS, Tailwind CSS, Angular Material i PrimeNG"
+      ]
+    },
+    {
+      "company": "9 Bits Sp. z o.o.",
+      "position": "Front-end Developer",
+      "period": "02.2017 - 03.2022",
+      "location": "Białystok, Polska",
+      "responsibilities": [
+        "Współpraca z klientami odnośnie tworzenia i ulepszania stron internetowych",
+        "Tworzenie i rozwój istniejących aplikacji internetowych",
+        "Tworzenie dokumentacji",
+        "Utrzymanie kodu, refaktoring istniejącego kodu",
+        "Zarządzanie zespołem, przydzielanie zadań, Code Review",
+        "Planowanie sprintów",
+        "Wycena pracochłonności",
+        "Wdrożenia aplikacji (CI/CD)",
+        "Ścisła współpraca z zespołem back-endowym",
+        "Ustalanie wymagań podczas tworzenia nowych funkcjonalności aplikacj"
+      ]
+    }
+  ],
+  "educations": [
+    {
+      "institution": "Politechnika Białostocka",
+      "degree": "Informatyka, stopień inżynierski",
+      "period": "2014 - 2018"
+    }
+  ],
+  "sectionTitles": {
+    "skills": "Umiejętności i Technologie",
+    "experience": "Doświadczenie",
+    "education": "Edukacja"
+  },
+  "sectionLabels": {
+    "dateOfBirth": "Data urodzenia",
+    "location": "Lokalizacja",
+    "email": "Email",
+    "phone": "Telefon",
+    "responsibilities": "Lista obowiązków",
+    "frontEnd": "Front-end",
+    "backEnd": "Back-end",
+    "other": "Pozostałe",
+    "copied": "Skopiowano do schowka",
+    "website": "Strona internetowa"
+  },
+  "footerNote": "Wyrażam zgodę na przetwarzanie moich danych osobowych w celu rekrutacji zgodnie z art. 6 ust. 1 lit. a Rozporządzenia Parlamentu Europejskiego i Rady (UE) 2016"
+}
